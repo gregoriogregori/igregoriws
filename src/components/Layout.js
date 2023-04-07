@@ -13,7 +13,6 @@ export default function Layout({ children, title, metaDescription, page }) {
   const dispatch = useDispatch();
   useEffect(() => {
     const actualLang = window.localStorage.getItem("lang");
-    console.log("actualLang", actualLang);
     if (actualLang) {
       dispatch(setLanguage(actualLang));
       window.localStorage.setItem("lang", actualLang);
