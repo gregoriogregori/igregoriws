@@ -7,8 +7,12 @@ export default function Home() {
     (state) => state.language.selectedLanguage
   );
   return (
-    <Layout title="Home" metaDescription="La Home" page={"home"}>
-      {selectedLanguage === "en" ? "hello" : "ciao"}
+    <Layout
+      title="Collezioni"
+      metaDescription="Le collezioni"
+      page={"collezioni"}
+    >
+      {selectedLanguage === "en" ? "collection" : "collezioni"}
     </Layout>
   );
 }
