@@ -17,6 +17,8 @@ export default function Header({ page }) {
 
   return (
     <>
+      <Link href="/collezioni">Collezioni</Link>
+      <Link href="/">Home</Link>
       {selectedLanguage === "it" && (
         <button
           onClick={() => handleLanguageChange("en")}
