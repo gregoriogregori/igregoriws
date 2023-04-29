@@ -15,8 +15,8 @@ import waves from "../../public/collections/waves/01_waves.jpg";
 const Creations = () => {
     return ( 
         <section id="creations" className="relative">
-            <div className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white pb-8 ">
-                <div className="flex justify-center md:justify-between mb-20 md:relative border border-yellow-600 md:border-none">
+            <div className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white pb-12 pt-4">
+                <div className="flex justify-center md:justify-between mb-8 md:relative">
                     <h2 className="text-4xl text-center uppercase md:text-left md:text-5x font-bold md:font-normal py-2">
                     Le nostre creazioni
                     </h2>
@@ -41,7 +41,7 @@ const Creations = () => {
                     />
                 </div>
                 <div className="flex justify-center mt-10 md:hidden">
-                    <button className="btn w-full md:hidden">Vedi Tutte</button>
+                    <button className="btn w-[90%] md:hidden">Vedi Tutte</button>
                 </div>
             </div>
         </section>

@@ -6,7 +6,7 @@ const Item = (props) => {
       <div className="group item shadow-2xl  text-slate-900 text-center rounded-lg">
         <Image
           src={props.img}
-          className="hidden w-full duration-200 md:block group-hover:scale-110 rounded"
+          className="hidden w-full duration-200 md:block group-hover:scale-110 rounded-t"
         />
         <Image src={props.img_mob} className="w-full md:hidden" />
         <div className="flex items-center justify-center p-2 text-white bg-slate-900">

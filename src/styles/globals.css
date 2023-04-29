@@ -17,7 +17,7 @@ body{
 
 @layer components {
   .btn {
-    @apply px-4 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black hover:bg-black hover:text-white;
+    @apply px-3 my-0 font-bold tracking-widest uppercase border-2 border-black hover:bg-black hover:text-white;
   }
 }
 
@@ -47,16 +47,16 @@ body{
 } 
 
 #hero {
-  background-image: url("../../public/hero_2.jpg");
-  background-position: center;
+  background-image: url("../../public/hero_d.jpg");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 576px) {
   #hero {
-    background-image: url("../../public/hero.jpg");
-    background-position: center center;
+    background-image: url("../../public/hero_m.jpg");
+    background-position: center right;
     background-size: cover;
   }
 }

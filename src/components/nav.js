@@ -2,11 +2,11 @@ import { useState } from "react";
 import Image from "next/image";
 import logo from "/public/logo.png"
 import Link from "next/link";
-import en from "/public/en.png"
-import it from "/public/it.png"
 
 
-const navbar
+
+
+const Navbar
  = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +18,7 @@ const navbar
         <navbar className="bg-black grid grid-cols-6 p-3">
         
             <div id="left" className="col-span-1 flex items-center justify-center">
-                <Image src={it} className="w-5 md:w-8" />
+              
             </div>
 
             <div id="logo" className="col-span-4 md:col-span-3 md:pl-36 flex items-center justify-center">
@@ -59,21 +59,21 @@ const navbar
         </navbar>
         <div id="menu" className={isOpen ? "responsive" : "hidden"}>
         <div className={`${isOpen ? "underline" : ''} text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}>
-            <Link href="#creations"> Collezioni</Link>
+            <Link href="#creations" onClick={handleClick}> Collezioni</Link>
         </div>
         <div className={`${isOpen ? "underline" : ''} pt-8 text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}>
-          <Link href="#features" >Chi siamo</Link>
+          <Link href="#features" onClick={handleClick} >Chi siamo</Link>
         </div>
         <div className={`${isOpen ? "underline" : ''} pt-8 text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}>
-          <Link href="#sedi">Le Nostre Sedi</Link>
+          <Link href="#sedi" onClick={handleClick}>Le Nostre Sedi</Link>
         </div>
         <div className={`${isOpen ? "underline" : ''} pt-8 text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}>
-          <Link href="#footer" >Contatti</Link>
+          <Link href="#footer" onClick={handleClick}>Contatti</Link>
         </div>
       </div>
     </section>
      );
 }
  
-export default navbar
+export default Navbar
 ;
