@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Image from "next/image";
-import logo from "/public/logo.png"
+import logo from "/public/logo.png";
 import Link from "next/link";
-
-
+import en from "/public/en.png";
+import it from "/public/it.png";
 
 
 const Navbar

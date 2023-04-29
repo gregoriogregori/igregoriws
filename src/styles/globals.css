@@ -1,17 +1,14 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-  font-family: 'Playfair Display', serif; 
+body {
+  font-family: "Playfair Display", serif;
 }
-
-
 
 @layer components {
   .responsive {
-    @apply absolute flex flex-col text-center h-full w-full pt-16 text-lg text-yellow-600 uppercase bg-white bg-opacity-80 ;
+    @apply absolute flex flex-col text-center h-full w-full pt-16 text-lg text-yellow-600 uppercase bg-white bg-opacity-80;
   }
 }
 
@@ -33,7 +30,7 @@ body{
   @apply absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-slate-100 to-transparent group-hover:from-gray-50 group-hover:to-white group-hover:opacity-50;
 }
 /* ___________________HERO__________________ */
- #sedi1 {
+#sedi1 {
   background-image: url("../../public/sede1.jpg");
   background-position: top;
   background-size: cover;
@@ -44,7 +41,7 @@ body{
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-} 
+}
 
 #hero {
   background-image: url("../../public/hero_d.jpg");
@@ -106,3 +103,21 @@ body{
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 /* ___________________HAMBURGER__________________ */
+
+/** Slider carousel **/
+.react-slideshow-container + ul.indicators {
+  gap: 8px;
+}
+
+.thumb-image-carousel {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.thumb-image-carousel.active {
+  border: 2px solid black;
+  opacity: 1;
+}
+
+.txt-white {
+  color: white !important;
+}
