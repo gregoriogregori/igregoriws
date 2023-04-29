@@ -1,5 +1,108 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"); */
+
+body{
+  font-family: 'Playfair Display', serif; 
+}
+
+
+
+@layer components {
+  .responsive {
+    @apply absolute flex flex-col text-center h-full w-full pt-16 text-lg text-yellow-600 uppercase bg-white bg-opacity-80 ;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black hover:bg-black hover:text-white;
+  }
+}
+
+.item-container {
+  @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+
+.item {
+  @apply relative overflow-hidden md:w-1/4;
+}
+
+.gradient {
+  @apply absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-slate-100 to-transparent group-hover:from-gray-50 group-hover:to-white group-hover:opacity-50;
+}
+/* ___________________HERO__________________ */
+ #sedi1 {
+  background-image: url("../../public/sede1.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#sedi2 {
+  background-image: url("../../public/sede_2.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+#hero {
+  background-image: url("../../public/hero_2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url("../../public/hero.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+}
+/* ___________________HERO__________________ */
+
+/* ___________________HAMBURGER__________________ */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.hamburger-bot,
+.hamburger-mid,
+.hamburger-top {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-mid {
+  transform: translateY(7px);
+}
+.hamburger-bot {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-mid {
+  display: none;
+}
+
+.open .hamburger-bot {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+/* ___________________HAMBURGER__________________ */

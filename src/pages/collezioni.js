@@ -1,18 +1,12 @@
-import Image from "next/image";
-import { useSelector } from "react-redux";
-import Layout from "../components/Layout";
+import Navbar from "../components/nav";
+import Footer from "../components/footer";
 
-export default function Home() {
-  const selectedLanguage = useSelector(
-    (state) => state.language.selectedLanguage
-  );
-  return (
-    <Layout
-      title="Collezioni"
-      metaDescription="Le collezioni"
-      page={"collezioni"}
-    >
-      {selectedLanguage === "en" ? "collection" : "collezioni"}
-    </Layout>
-  );
+
+const Collezioni = () => {
+    return ( <>
+    <Navbar />
+    <Footer />
+    </> );
 }
+ 
+export default Collezioni;
