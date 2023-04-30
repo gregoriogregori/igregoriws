@@ -65,43 +65,25 @@ const Header = () => {
           </div>
         </div>
       </navbar>
-      <div id="menu" className={isOpen ? "responsive" : "hidden"}>
-        <div
-          className={`${
-            isOpen ? "underline" : ""
-          } text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}
-        >
-          <Link href="#creations" onClick={handleClick}>
-            {" "}
-            Collezioni
-          </Link>
-        </div>
-        <div
-          className={`${
-            isOpen ? "underline" : ""
-          } pt-8 text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}
-        >
-          <Link href="#features" onClick={handleClick}>
-            Chi siamo
-          </Link>
-        </div>
-        <div
-          className={`${
-            isOpen ? "underline" : ""
-          } pt-8 text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}
-        >
-          <Link href="#sedi" onClick={handleClick}>
-            Le Nostre Sedi
-          </Link>
-        </div>
-        <div
-          className={`${
-            isOpen ? "underline" : ""
-          } pt-8 text-slate-900 decoration-yellow-600 underline-offset-4 font-extrabold`}
-        >
-          <Link href="#footer" onClick={handleClick}>
-            Contatti
-          </Link>
+      <div id="menu" className={isOpen ? "responsive bg-slate-200" : "hidden"}>
+        <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
+          <div className="fixed left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
+            <div className="mb-12"> <Image src={logo} /></div>
+            <div className="flex flex-col text-yellow-500 text-xl gap-12 pt-4">
+              <Link href="#creations" onClick={handleClick}>
+              Chi siamo
+              </Link>
+              <Link href="#creations" onClick={handleClick}>
+              Collezioni
+              </Link>
+              <Link href="#creations" onClick={handleClick}>
+              Le nostre Sedi
+              </Link>
+              <Link href="#creations" onClick={handleClick}>
+              Contatti
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </header>

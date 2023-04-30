@@ -40,7 +40,7 @@ const Creations = () => {
     <section id="creations" className="relative">
       <div className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white md:my-[70px]">
         <div className="flex justify-center md:justify-between mb-[24px] md:mb-[40px] md:relative">
-          <h2 className="text-3xl text-center uppercase md:text-left font-normal py-2">
+          <h2 className="text-4xl text-center uppercase md:text-left font-bold py-2">
             Le nostre creazioni
           </h2>
           <button className="btn hidden md:block">Tutte le Collezioni</button>

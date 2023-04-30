@@ -53,7 +53,7 @@ body {
 @media (max-width: 576px) {
   #hero {
     background-image: url("../../public/hero_m.jpg");
-    background-position: center right;
+    background-position: center;
     background-size: cover;
   }
 }
