@@ -1,7 +1,13 @@
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-const Slider = ({ images }) => {
+const Slider = () => {
+    const images = [
+      "/carosello-storia/Storia-3.jpg",
+      "/carosello-storia/Storia-1.jpg",
+       "/carosello-storia/Storia-2.jpg",  
+        "/carosello-storia/Storia-4.jpg",
+      ];
   return (
     <Zoom arrows={false} scale={1.4}>
       {images.map((each, index) => (

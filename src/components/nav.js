@@ -14,7 +14,7 @@ const Navbar
       setIsOpen(!isOpen);
     };
     return ( 
-        <section id="navbar" className="bg-gray-900 max-h-85px] text-white ">
+        <section id="navbar" className="bg-gray-900 max-h-85px] text-white shadow-xl shadow-white ">
         <navbar className="bg-black grid grid-cols-6 p-3">
         
             <div id="left" className="col-span-1 flex items-center justify-center">
