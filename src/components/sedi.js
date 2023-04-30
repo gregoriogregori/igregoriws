@@ -3,9 +3,9 @@ const Sedi = () => {
     <section id="sedi" className="bg-slate-900 h-full font-bold text-slate-900">
       <div className="border-b border-yellow-600">
         <div className="flex justify-center items-center pt-8">
-          <p className="text-white text-3xl font-normal">VIENI A TROVARCI</p>
+          <p className="text-white text-4xl font-bold">LE NOSTRE SEDI</p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center gap-8 items-center p-8 text-xl">
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-36 items-center p-8 text-xl">
           <a
             href="https://goo.gl/maps/efygMvXhfqDiTK9C6"
             target="_blank"

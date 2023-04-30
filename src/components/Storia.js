@@ -29,7 +29,7 @@ const Storia = ({ content }) => {
           <div className="hidden md:block">
             <Text
               tag="h2"
-              className="text-3xl uppercase pb-4 text-slate-950 font-normal"
+              className="text-4xl uppercase pb-4 text-slate-950 font-bold"
             >
               {content.storia.title}
             </Text>
