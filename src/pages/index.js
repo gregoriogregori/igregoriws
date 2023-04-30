@@ -36,7 +36,7 @@ export default function Home() {
       <Header />
       <Hero content={Content} />
       <Storia content={Content} />
-      <Creations />
+      <Creations content={Content.collezioni} />
       <Sedi />
       <Footer />
     </>
