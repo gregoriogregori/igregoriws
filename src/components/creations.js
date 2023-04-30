@@ -10,7 +10,7 @@ const Creations = ({ content }) => {
         <div className="flex justify-center md:justify-between mb-[24px] md:mb-[40px] md:relative">
           <Text
             tag="h2"
-            className="text-4xl text-center uppercase md:text-left font-bold py-2"
+            className="text-4xl text-center uppercase md:text-left font-bold pb-4 md:border-b-2 border-slate-950"
           >
             {content.title}
           </Text>
