@@ -1,4 +1,4 @@
-import Navbar from "../components/nav";
+import Navbar from "../components/Header";
 import Footer from "../components/footer";
 import CollectionItem from '../components/collectionItem'
 
