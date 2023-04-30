@@ -274,18 +274,18 @@ export const COLLECTIONS_HOME = [
     text: "Tennis Bracelet",
     img: "/assets/Covers/tennisBracelet_cover.jpg",
     images: [
-      "/assets/Tennis Bracelet/tennisBracelet_cover.jpg",
-      "/assets/Tennis Bracelet/01_tennis bracelet.jpg",
+      "/assets/TennisBracelets/tennisBracelet_cover.jpg",
+      "/assets/TennisBracelets/01_tennis_bracelet.jpg",
     ],
   },
   {
     text: "Trilogy",
     img: "/assets/Covers/trilogy_cover.jpg",
     images: [
-      "/assets/Trilogy/ trilogy_cover.jpg",
+      "/assets/Trilogy/trilogy_cover.jpg",
       "/assets/Trilogy/02_trilogy.jpg",
       "/assets/Trilogy/04_trilogy.jpg",
-      "/assets/Trilogy/ 06_trilogy.jpg",
+      "/assets/Trilogy/06_trilogy.jpg",
       "/assets/Trilogy/07_trilogy.jpg",
       "/assets/Trilogy/08_trilogy.jpg",
       "/assets/Trilogy/09_trilogy.jpg",
