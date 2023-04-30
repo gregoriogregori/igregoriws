@@ -9,7 +9,7 @@ const Item = ({text, img, link, ...otherProps}) => {
           className="duration-200 group-hover:scale-110 rounded-t"
           alt={text}
         />
-        <div className="flex items-center justify-center p-2 text-white bg-slate-900 rounded-b relative z-10">
+        <div className="flex items-center justify-center p-2 text-white bg-slate-900 rounded-b relative">
           <p className="md:text-base uppercase">{text}</p>
       </div>
       </a>
