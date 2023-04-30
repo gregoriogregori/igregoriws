@@ -1,7 +1,14 @@
 import { useEffect } from "react";
 import Head from "next/head";
+import Header from "../components/Header";
+import Sedi from "../components/sedi";
+import Storia from "../components/Storia";
+import Creations from "../components/creations";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
 import { useSelector, useDispatch } from "react-redux";
 import { setLanguage } from "../redux/language";
+import { HOME_CONTENT } from "../constants/Content";
 
 export default function Home() {
   const selectedLanguage = useSelector(
@@ -18,7 +25,7 @@ export default function Home() {
       }
     }
   }, [dispatch, selectedLanguage]);
-
+  const Content = HOME_CONTENT[selectedLanguage];
   return (
     <>
       <Head>
@@ -26,7 +33,12 @@ export default function Home() {
         <meta name="description" content="Gioielleria I Gregori Milano" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <></>
+      <Header />
+      <Hero content={Content} />
+      <Storia content={Content} />
+      <Creations />
+      <Sedi />
+      <Footer />
     </>
   );
 }

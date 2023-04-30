@@ -13,44 +13,58 @@ import eternelle from "../../public/collections/eternelle/01_eternelle.jpg";
 import waves from "../../public/collections/waves/01_waves.jpg";
 
 const collections = [
-    {
-        text: "Trilogy",
-        img: trilogy,
-        link: "https://www.google.it/"
-    },
-    {
-        text: "Solitaire",
-        img: solitaire,
-        link: "https://www.google.it/"
-    }
-]
+  {
+    text: "Trilogy",
+    img: trilogy,
+    link: "https://www.google.it/",
+  },
+  {
+    text: "Solitaire",
+    img: solitaire,
+    link: "https://www.google.it/",
+  },
+  {
+    text: "Trilogy",
+    img: trilogy,
+    link: "https://www.google.it/",
+  },
+  {
+    text: "Solitaire",
+    img: solitaire,
+    link: "https://www.google.it/",
+  },
+  {
+    text: "Trilogy",
+    img: trilogy,
+    link: "https://www.google.it/",
+  },
+  {
+    text: "Solitaire",
+    img: solitaire,
+    link: "https://www.google.it/",
+  },
+];
 const Creations = () => {
-    return ( 
-        <section id="creations" className="relative">
-            <div className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white pb-12 pt-4">
-                <div className="flex justify-center md:justify-between mb-8 md:relative">
-                    <h2 className="text-4xl text-center uppercase md:text-left md:text-5x font-bold md:font-normal py-2">
-                    Le nostre creazioni
-                    </h2>
-                    <button className="btn hidden md:block">Tutte le Collezioni</button>
-                </div>
-                <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 flex-wrap mt-8">
-                {collections.map(el =>
-                    <Item
-                    key={el.text}
-                    img={el.img}
-                    text={el.text}
-                    link={el.link}
-                    />
-                 )}
-                   
-                </div>
-                <div className="flex justify-center mt-10 md:hidden">
-                    <button className="btn w-[90%] md:hidden">Vedi Tutte</button>
-                </div>
-            </div>
-        </section>
-     );
-}
- 
+  return (
+    <section id="creations" className="relative">
+      <div className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white md:my-[70px]">
+        <div className="flex justify-center md:justify-between mb-[24px] md:mb-[40px] md:relative">
+          <h2 className="text-3xl text-center uppercase md:text-left font-normal py-2">
+            Le nostre creazioni
+          </h2>
+          <button className="btn hidden md:block">Tutte le Collezioni</button>
+        </div>
+        <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 flex-wrap mt-8">
+          {collections.map((el) => (
+            <Item key={el.text} img={el.img} text={el.text} link={el.link} />
+          ))}
+        </div>
+        <div className="flex justify-center my-[24px] md:hidden">
+          <button className="btn w-full p-[12px]">Vedi Tutte</button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default Creations;

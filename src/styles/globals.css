@@ -6,6 +6,10 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.roboto-font {
+  font-family: "Roboto", sans-serif !important;
+}
+
 @layer components {
   .responsive {
     @apply absolute flex flex-col text-center h-full w-full pt-16 text-lg text-yellow-600 uppercase bg-white bg-opacity-80;
@@ -116,4 +120,64 @@ body {
 
 .txt-white {
   color: white !important;
+}
+
+/* Lang menu container */
+.lang-menu-container {
+  box-sizing: border-box;
+  position: relative;
+}
+@keyframes example {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 1000px;
+  }
+}
+.lang-menu-dropdown {
+  position: absolute;
+  padding: 8px;
+  z-index: 2;
+  min-width: 100px;
+  margin: 0;
+  margin-top: 8px;
+  text-indent: 0;
+  list-style-type: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 200ms linear;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 8px 8px -8px rgba(0, 75, 128, 0.24),
+    0px 0px 8px -2px rgba(0, 75, 128, 0.16);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.lang-menu-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+.lang-menu-dropdown.open-dropdown {
+  animation-name: example;
+  animation-duration: 2s;
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-opacitiy {
+  animation-name: opacity;
+  animation-duration: 3s;
 }
