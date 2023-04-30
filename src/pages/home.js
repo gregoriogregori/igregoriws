@@ -15,9 +15,9 @@ import CarouselSlider from "../components/common/Carousel";
 import LangMenu from "../components/common/LangMenu";
 
 const sliderImages = [
+  "/carosello-storia/Storia-3.jpg",
   "/carosello-storia/Storia-1.jpg",
   "/carosello-storia/Storia-2.jpg",
-  "/carosello-storia/Storia-3.jpg",
   "/carosello-storia/Storia-4.jpg",
 ];
 

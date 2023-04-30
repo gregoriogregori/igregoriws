@@ -22,8 +22,6 @@ body {
   }
 }
 
-
-
 .item {
   @apply relative overflow-hidden md:w-1/4;
 }
@@ -168,4 +166,18 @@ body {
   visibility: visible;
   opacity: 1;
   overflow: auto;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-opacitiy {
+  animation-name: opacity;
+  animation-duration: 3s;
 }
