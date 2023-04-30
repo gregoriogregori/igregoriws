@@ -10,7 +10,7 @@ const Sedi = () => {
             href="https://goo.gl/maps/efygMvXhfqDiTK9C6"
             target="_blank"
             id="sedi1"
-            className="block h-[300px] max-w-[350px] flex items-end justify-end rounded-xl"
+            className="h-[300px] max-w-[350px] flex items-end justify-end rounded-xl"
           >
             <div className="bg-white bg-opacity-75 rounded-b-xl">
               <p className="w-full text-center p-4">Via Marghera 22, Milano</p>
@@ -20,7 +20,7 @@ const Sedi = () => {
             href="https://goo.gl/maps/g5gpzGkdkh2JYB2o8"
             target="_blank"
             id="sedi2"
-            className="block h-[300px] max-w-[350px] flex items-end justify-end mt-4 md:mt-0 rounded-xl"
+            className="h-[300px] max-w-[350px] flex items-end justify-end mt-4 md:mt-0 rounded-xl"
           >
             <div className="bg-white bg-opacity-75 rounded-b-xl">
               <p className=" w-full text-center p-4">
