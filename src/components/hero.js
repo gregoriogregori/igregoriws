@@ -3,10 +3,10 @@ import Text from "./common/Text";
 const Hero = ({ content }) => {
   return (
     <section id="hero">
-      <div className="min-h-[600px] md:min-h-[700px] reltive p-[12px] pt-[50px] sm:pt-[140px] lg:pl-[40px] animation-opacitiy">
+      <div className="min-h-[600px] md:min-h-[700px] reltive p-[18px] pt-[50px] sm:pt-[120px] lg:pl-[60px] animation-opacitiy">
         <div className="p-[24px] md:p-[60px] bg-black bg-opacity-40 w-full max-w-[650px]">
           <Text
-            className="text-white text-center md:text-left text-5xl md:text-6xl uppercase font-medium"
+            className="text-white text-center text-5xl md:text-6xl uppercase font-medium"
             tag="h1"
           >
             {content.title}

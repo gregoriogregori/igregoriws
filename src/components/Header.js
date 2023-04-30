@@ -19,13 +19,13 @@ const Header = () => {
         <div id="left" className="col-span-1 flex items-center justify-center">
           <LangMenu />
         </div>
-
-        <div
+        <a
+          href="/"
           id="logo"
           className="col-span-4 md:col-span-3 md:pl-36 flex items-center justify-center"
         >
           <Image className="w-[200px] " src={logo} alt="logo" />
-        </div>
+        </a>
         <div className="md:hidden flex items-center justify-center pt-1">
           <button
             onClick={handleClick}
@@ -51,15 +51,15 @@ const Header = () => {
             className="hidden h-10 md:flex md:items-center md:space-x-4"
           >
             <div className="group">
-              <Link href="#creations">Collezioni</Link>
+              <Link href="/#storia">Chi Siamo</Link>
               <div className="mx-2 group-hover:border-b group-hover:border-yellow-600"></div>
             </div>
             <div className="group">
-              <Link href="#storia">Chi Siamo</Link>
+              <Link href="/#creations">Collezioni</Link>
               <div className="mx-2 group-hover:border-b group-hover:border-yellow-600"></div>
             </div>
             <div className="group">
-              <Link href="#footer">Contatti</Link>
+              <Link href="/#footer">Contatti</Link>
               <div className="mx-2 group-hover:border-b group-hover:border-yellow-600"></div>
             </div>
           </div>
@@ -70,16 +70,16 @@ const Header = () => {
           <div className="fixed left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
             <div className="mb-12"> <Image src={logo} /></div>
             <div className="flex flex-col text-yellow-500 text-xl gap-12 pt-4">
-              <Link href="#creations" onClick={handleClick}>
+              <Link href="/#storia" onClick={handleClick}>
               Chi siamo
               </Link>
-              <Link href="#creations" onClick={handleClick}>
+              <Link href="/#creations" onClick={handleClick}>
               Collezioni
               </Link>
-              <Link href="#creations" onClick={handleClick}>
+              <Link href="/#sedi" onClick={handleClick}>
               Le nostre Sedi
               </Link>
-              <Link href="#creations" onClick={handleClick}>
+              <Link href="/#footer" onClick={handleClick}>
               Contatti
               </Link>
             </div>
