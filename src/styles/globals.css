@@ -181,3 +181,7 @@ body {
   animation-name: opacity;
   animation-duration: 3s;
 }
+
+.nextui-c-hdxYb svg {
+  color: black !important;
+}

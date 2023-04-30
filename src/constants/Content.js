@@ -24,3 +24,175 @@ export const HOME_CONTENT = {
     },
   },
 };
+
+export const COLLEZIONI_CONTENT = {
+  it: {
+    title: "Scopri le collezioni più esclusive",
+    subtitle: "Design al servizio dell’unicità",
+    body: "Ogni creazione richiede ispirazione, innovazione e unicità. Dietro ogni gioiello la nostra passione, per Voi, per Sempre.",
+  },
+  en: {
+    title: "Discover the most exclusive collections",
+    subtitle: "Design at the service of uniqueness",
+    body: "Each creation requires inspiration, innovation and uniqueness. Behind every jewel our passion, for you, forever.",
+  },
+  ch: {
+    title: "探索最独特的系列",
+    subtitle: "为独特性服务的设计",
+    body: "每一次创作都需要灵感、创新和独特性。在每颗珠宝的背后，我们对您的热情永远不变。",
+  },
+};
+
+export const COLLECTIONS = [
+  {
+    text: "Abbracci",
+    img: "/assets/Covers/abbracci_cover.jpg",
+    images: [
+      "/assets/Abbracci/abbracci_cover.jpg",
+      "/assets/Abbracci/01_abbracci.jpg",
+      "/assets/Abbracci/03_abbracci.jpg",
+      "/assets/Abbracci/04_abbracci.jpg",
+      "/assets/Abbracci/05_abbracci.jpg",
+      "/assets/Abbracci/06_abbracci.jpg",
+    ],
+  },
+  {
+    text: "Da Vinci",
+    img: "/assets/Covers/daVinci_cover.jpg",
+    images: [
+      "/assets/DaVinci/AUREA_2.jpg",
+      "/assets/DaVinci/AUREA_3.jpg",
+      "/assets/DaVinci/AUREA_4.jpg",
+      "/assets/DaVinci/AUREA.jpg",
+      "/assets/DaVinci/daVinci_cover.jpg",
+      "/assets/DaVinci/RENAISSANCE_3.jpg",
+      "/assets/DaVinci/RENAISSANCE_4.jpg",
+      "/assets/DaVinci/RENAISSANCE.jpg",
+      "/assets/DaVinci/VITRUVIAN_2.jpg",
+      "/assets/DaVinci/VITRUVIAN_3.jpg",
+      "/assets/DaVinci/VITRUVIAN_4.jpg",
+      "/assets/DaVinci/VITRUVIAN.jpg",
+    ],
+  },
+  {
+    text: "Decor",
+    img: "/assets/Covers/decor_cover.jpg",
+    images: [
+      "/assets/Decor/decor_cover.jpg",
+      "/assets/Decor/02_decor.jpg",
+      "/assets/Decor/03_decor.jpg/",
+      "/assets/Decor/04_decor.jpg",
+      "/assets/Decor/070.jpg",
+    ],
+  },
+  {
+    text: "Eternelle",
+    img: "/assets/Covers/eternelle_cover.jpg",
+    images: [
+      "/assets/Eternelle/eternelle_cover.jpg",
+      "/assets/Eternelle/01_eternelle.jpg",
+    ],
+  },
+  {
+    text: "Fire",
+    img: "/assets/Covers/fire_cover2.jpg",
+    images: [
+      "/assets/Fire/fire_cover.jpg",
+      "/assets/Fire/001.jpg",
+      "/assets/Fire/002.jpg",
+      "/assets/Fire/014.jpg",
+    ],
+  },
+  {
+    text: "Glamour",
+    img: "/assets/Covers/glamour_cover.jpg",
+    images: [
+      "/assets/Glamour/glamour_cover.jpg",
+      "/assets/Glamour/OUT-063.jpg",
+      "/assets/Glamour/01_glamour.jpg",
+      "/assets/Glamour/02_glamour.jpg",
+      "/assets/Glamour/03_glamour.jpg",
+      "/assets/Glamour/04_glamour.jpg",
+      "/assets/Glamour/05_glamour.jpg",
+    ],
+  },
+  {
+    text: "Nature",
+    img: "/assets/Covers/nature_cover.jpg",
+    images: [
+      "/assets/Nature/nature_cover.jpg",
+      "/assets/Nature/003.jpg",
+      "/assets/Nature/004.jpg",
+    ],
+  },
+  {
+    text: "Platinum",
+    img: "/assets/Covers/platinum_cover.jpg",
+    images: [
+      "/assets/Platinum/I GREGORI_03_05008.jpg",
+      "/assets/Platinum/I GREGORI_04_05008.jpg",
+      "/assets/Platinum/I GREGORI_05_05008.jpg",
+      "/assets/Platinum/I GREGORI_06_05008.jpg",
+      "/assets/Platinum/I GREGORI_07_05008.jpg",
+      "/assets/Platinum/I GREGORI_08_05008.jpg",
+      "/assets/Platinum/I GREGORI_10_05008.jpg",
+      "/assets/Platinum/I GREGORI_12_05008.jpg",
+      "/assets/Platinum/I GREGORI_13_05008.jpg",
+      "/assets/Platinum/I GREGORI_14_05008.jpg",
+      "/assets/Platinum/platinum_cover.jpg",
+      "/assets/Platinum/scrigno aperto.jpg",
+      "/assets/Platinum/scrigno chiuso.jpg",
+    ],
+  },
+  {
+    text: "Snake",
+    img: "/assets/Covers/snake_cover.jpg",
+    images: [
+      "/assets/Snake/snake_cover.jpg",
+      "/assets/Snake/006.jpg",
+      "/assets/Snake/008.jpg",
+      "/assets/Snake/010.jpg",
+    ],
+  },
+  {
+    text: "Solitaire",
+    img: "/assets/Covers/solitaire_cover.jpg",
+    images: [
+      "/assets/Solitaire/solitaire_cover.jpg",
+      "/assets/Solitaire/02_solitaire.jpg",
+      "/assets/Solitaire/03_solitaire.jpg",
+      "/assets/Solitaire/04_solitaire.jpg",
+    ],
+  },
+  {
+    text: "Tennis Bracelet",
+    img: "/assets/Covers/tennisBracelet_cover.jpg",
+    images: [
+      "/assets/Tennis Bracelet/tennisBracelet_cover.jpg",
+      "/assets/Tennis Bracelet/01_tennis bracelet.jpg",
+    ],
+  },
+  {
+    text: "Trilogy",
+    img: "/assets/Covers/trilogy_cover.jpg",
+    images: [
+      "/assets/Trilogy/ trilogy_cover.jpg",
+      "/assets/Trilogy/02_trilogy.jpg",
+      "/assets/Trilogy/04_trilogy.jpg",
+      "/assets/Trilogy/ 06_trilogy.jpg",
+      "/assets/Trilogy/07_trilogy.jpg",
+      "/assets/Trilogy/08_trilogy.jpg",
+      "/assets/Trilogy/09_trilogy.jpg",
+    ],
+  },
+  {
+    text: "Waves",
+    img: "/assets/Covers/pippo.jpg",
+    images: [
+      "/assets/Waves/waves_cover.jpg",
+      "/assets/Waves/011.jpg",
+      "/assets/Waves/012.jpg",
+      "/assets/Waves/013.jpg",
+    ],
+  },
+];

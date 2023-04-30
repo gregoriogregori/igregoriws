@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Text from "../components/common/Text";
-import { HOME_CONTENT } from "../constants/Content";
+import { COLLEZIONI_CONTENT } from "../constants/Content";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setLanguage } from "../redux/language";
@@ -39,8 +39,7 @@ const Home = () => {
       window.localStorage.setItem("lang", language);
     }
   };
-  const Content = HOME_CONTENT[selectedLanguage];
-  console.log("selectedLanguage", selectedLanguage);
+  const Content = COLLEZIONI_CONTENT[selectedLanguage];
   return (
     <>
       <div className="w-full lg:w-[500px] mb-[200px]">

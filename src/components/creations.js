@@ -1,5 +1,5 @@
 import Item from "../components/item";
-
+import Link from "next/link";
 import solitaire from "../../public/assets/Covers/solitaire_cover.jpg";
 import trilogy from "../../public/assets/Covers/trilogy_cover.jpg";
 
@@ -43,7 +43,9 @@ const Creations = () => {
           <h2 className="text-3xl text-center uppercase md:text-left font-normal py-2">
             Le nostre creazioni
           </h2>
-          <button className="btn hidden md:block">Tutte le Collezioni</button>
+          <Link className="btn hidden md:block" href="/collezioni">
+            Tutte le Collezioni
+          </Link>
         </div>
         <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 flex-wrap mt-8">
           {collections.map((el) => (
@@ -51,7 +53,9 @@ const Creations = () => {
           ))}
         </div>
         <div className="flex justify-center my-[24px] md:hidden">
-          <button className="btn w-full p-[12px]">Vedi Tutte</button>
+          <Link className="btn w-full p-[12px]" href="/collezioni">
+            Vedi Tutte
+          </Link>
         </div>
       </div>
     </section>
