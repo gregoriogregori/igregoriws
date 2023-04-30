@@ -12,6 +12,7 @@ import { HiMapPin } from "react-icons/hi2";
 
 import Slider from "../components/common/Slider";
 import CarouselSlider from "../components/common/Carousel";
+import LangMenu from "../components/common/LangMenu";
 
 const sliderImages = [
   "/carosello-storia/Storia-1.jpg",
@@ -64,6 +65,7 @@ const Home = () => {
           <HiMapPin />
         </a>
       </div>
+      <LangMenu className="mb-[200px]" />
       <Text tag="h1">{Content.title}</Text>
       <div className="flex gap-8 mb-[200px]">
         <button onClick={() => handleLanguageChange("en")}>
