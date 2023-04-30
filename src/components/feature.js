@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Slider from "../components/Slider2";
 import storia1 from "../../public/storia1.jpeg";
 
 const Features = () => {

@@ -12,6 +12,18 @@ import trilogy from "../../public/collections/trilogy/01_trilogy.jpg";
 import eternelle from "../../public/collections/eternelle/01_eternelle.jpg";
 import waves from "../../public/collections/waves/01_waves.jpg";
 
+const collections = [
+    {
+        text: "Trilogy",
+        img: trilogy,
+        link: "https://www.google.it/"
+    },
+    {
+        text: "Solitaire",
+        img: solitaire,
+        link: "https://www.google.it/"
+    }
+]
 const Creations = () => {
     return ( 
         <section id="creations" className="relative">
@@ -22,23 +34,16 @@ const Creations = () => {
                     </h2>
                     <button className="btn hidden md:block">Tutte le Collezioni</button>
                 </div>
-                <div className="item-container mt-8">
-                    <Item img={trilogy} img_mob={trilogy} text="Trilogy" />
+                <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 flex-wrap mt-8">
+                {collections.map(el =>
                     <Item
-                    img={solitaire}
-                    img_mob={solitaire}
-                    text="Solitaire"
+                    key={el.text}
+                    img={el.img}
+                    text={el.text}
+                    link={el.link}
                     />
-                                        <Item
-                    img={tennisbracelet}
-                    img_mob={tennisbracelet}
-                    text="Tennis Bracelet"
-                    />
-                    <Item
-                    img={eternelle}
-                    img_mob={eternelle}
-                    text="Eternelle"
-                    />
+                 )}
+                   
                 </div>
                 <div className="flex justify-center mt-10 md:hidden">
                     <button className="btn w-[90%] md:hidden">Vedi Tutte</button>

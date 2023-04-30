@@ -5,6 +5,7 @@ import Features from "../components/feature";
 import Creations from "../components/creations";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
+import Slider from "../components/Slider2";
 
 const test = () => {
   return (

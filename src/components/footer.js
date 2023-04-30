@@ -1,8 +1,8 @@
-import facebook from "../../public/icons/icon-facebook.svg";
-import twitter from "../../public/icons/icon-twitter.svg";
-import instagram from "../../public/icons/icon-instagram.svg";
-import Image from "next/image";
-import email from "../../public/icons/email.svg";
+import { AiFillPhone } from "react-icons/ai";
+import { MdMail } from "react-icons/md";
+import { FaFacebookSquare } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { HiMapPin } from "react-icons/hi2";
 import logo from "/public/logo.png"
 
 const Footer = () => {
@@ -11,30 +11,23 @@ const Footer = () => {
         <section id="footer" className="bg-black">
         <div className="container max-w-6xl py-4 md:py-6 mx-auto">
           <div className="flex flex-col items-center space-y-6 md:space-y-4 md:justify-around md:align-middle ">
-            <div className="flex items-center justify-evenly space-x-12 md:space-x-24 pt-4">
-              <div className="h-8 group">
+            <div className="flex items-center justify-evenly">
+              <div className="w-full flex md:gap-24 gap-12 text-4xl txt-white bg-black">
                 <a href="#">
-                  <Image src={email} className="h-6 bg-white" />
+                  <AiFillPhone />
                 </a>
-              </div>
-              <div className="h-8 group">
                 <a href="#">
-                  <Image src={facebook} className="h-6" />
+                  <MdMail />
                 </a>
-              </div>
-              <div className="h-8 group">
+
                 <a href="#">
-                  <Image src={facebook} className="h-6" />
+                  <FaFacebookSquare />
                 </a>
-              </div>
-              <div className="h-8 group">
                 <a href="#">
-                  <Image src={twitter} className="h-6" />
+                  <RiInstagramFill />
                 </a>
-              </div>
-              <div className="h-8 group">
                 <a href="#">
-                  <Image src={instagram} className="h-6" />
+                  <HiMapPin />
                 </a>
               </div>
             </div>
