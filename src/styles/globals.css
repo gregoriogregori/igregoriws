@@ -137,9 +137,9 @@ body {
 }
 .lang-menu-dropdown {
   position: absolute;
-  padding: 8px;
+  padding: 12px;
   z-index: 2;
-  min-width: 100px;
+  min-width: 120px;
   margin: 0;
   margin-top: 8px;
   text-indent: 0;

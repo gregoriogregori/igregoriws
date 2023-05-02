@@ -1,7 +1,12 @@
-import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Modal } from "@nextui-org/react";
 import SliderNormal from "../common/SliderNormal";
+import { AiFillPhone } from "react-icons/ai";
+import { MdMail } from "react-icons/md";
+import { FaFacebookSquare } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { HiMapPin } from "react-icons/hi2";
 
 const ItemCollection = ({ text, img, images, ...otherProps }) => {
   const bgurl = `url('${img}')`;
@@ -34,6 +39,27 @@ const ItemCollection = ({ text, img, images, ...otherProps }) => {
         <Modal.Body>
           <div align="center" className="pt-[20px]">
             <SliderNormal images={images} />
+          </div>
+          <div className="flex flex-wrap justify-center md:gap-12 gap-8 text-4xl px-[8px]">
+            <a href="tel:+39024817176">
+              <AiFillPhone />
+            </a>
+            <a href="mailto:igregori.customer@gmail.com">
+              <MdMail />
+            </a>
+
+            <a href="https://www.facebook.com/IGregoriMilano" target="_blank">
+              <FaFacebookSquare />
+            </a>
+            <a
+              href="https://www.instagram.com/igregorimilano/?hl=it"
+              target="_blank"
+            >
+              <RiInstagramFill />
+            </a>
+            <Link href="/#sedi" onClick={closeHandler}>
+              <HiMapPin />
+            </Link>
           </div>
         </Modal.Body>
       </Modal>

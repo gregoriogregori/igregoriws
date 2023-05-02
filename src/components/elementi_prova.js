@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Text from "../components/common/Text";
+import Text from "./common/Text";
 import { COLLEZIONI_CONTENT } from "../constants/Content";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -10,9 +10,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { HiMapPin } from "react-icons/hi2";
 
-import Slider from "../components/common/Slider";
-import CarouselSlider from "../components/common/Carousel";
-import LangMenu from "../components/common/LangMenu";
+import Slider from "./common/Slider";
+import CarouselSlider from "./common/Carousel";
+import LangMenu from "./common/LangMenu";
 
 const sliderImages = [
   "/carosello-storia/Storia-3.jpg",
