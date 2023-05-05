@@ -9,12 +9,12 @@ const Header = ({ content }) => {
   const handleClick = () => {
     const newIsOpen = !isOpen
     setIsOpen(newIsOpen);
-    document.body.classList.toggle('no-scroll', !newIsOpen);
+  
   };
   return (
     <header
       id="navbar"
-      className="bg-gray-900 max-h-85px] text-white shadow-xl shadow-white fixed"
+      className="bg-gray-900 max-h-85px] text-white shadow-xl shadow-white"
     >
       <navbar className="bg-black grid grid-cols-6 p-3">
         <div id="left" className="col-span-1 flex items-center justify-center">
