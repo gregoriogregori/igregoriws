@@ -1,6 +1,6 @@
 import Text from "../components/common/Text";
 import Head from "next/head";
-import Navbar from "../components/Header";
+// import Navbar from "../components/Header";
 import Footer from "../components/footer";
 import ItemCollection from "../components/common/itemCollection";
 import { COLLEZIONI_CONTENT, COLLECTIONS } from "../constants/Content";
@@ -34,7 +34,6 @@ const Collezioni = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Navbar selectedLanguage={selectedLanguage} />
 
       <div className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white md:my-[70px]">
         <Text
