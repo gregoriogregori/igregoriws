@@ -137,7 +137,7 @@ export const COLLECTIONS = [
   },
   {
     text: "Fire",
-    img: "/assets/Covers/fire_cover2.jpg",
+    img: "/assets/Covers/fire_cover.jpg",
     images: [
       "/assets/Fire/fire_cover.jpg",
       "/assets/Fire/001.jpg",
