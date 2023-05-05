@@ -6,9 +6,9 @@ import LangMenu from "../components/common/LangMenu";
 
 const Header = ({ content }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleClick = () => {
     setIsOpen(!isOpen);
+    document.body.classList.toggle('no-scroll', !isOpen);
   };
   return (
     <header
