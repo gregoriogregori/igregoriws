@@ -7,13 +7,14 @@ import LangMenu from "../components/common/LangMenu";
 const Header = ({ content }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
-    setIsOpen(!isOpen);
-    document.body.classList.toggle('no-scroll', !isOpen);
+    const newIsOpen = !isOpen
+    setIsOpen(newIsOpen);
+    document.body.classList.toggle('no-scroll', !newIsOpen);
   };
   return (
     <header
       id="navbar"
-      className="bg-gray-900 max-h-85px] text-white shadow-xl shadow-white"
+      className="bg-gray-900 max-h-85px] text-white shadow-xl shadow-white fixed"
     >
       <navbar className="bg-black grid grid-cols-6 p-3">
         <div id="left" className="col-span-1 flex items-center justify-center">
