@@ -66,7 +66,7 @@ const Header = ({ content }) => {
         </div>
       </navbar>
       <div id="menu" className={isOpen ? "responsive bg-slate-200" : "hidden"}>
-        <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
+        <div className="fixed left-0 top-0 w-full h-screen bg-black/70 overflow-hidden">
           <div className="fixed left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
             <div className="mb-12">
               {" "}
