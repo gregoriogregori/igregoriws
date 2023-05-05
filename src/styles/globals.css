@@ -10,7 +10,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-
 .roboto-font {
   font-family: "Roboto", sans-serif !important;
 }
@@ -189,4 +188,14 @@ body.no-scroll {
 
 .nextui-c-hdxYb svg {
   color: black !important;
+}
+
+.menu-is-open {
+  overflow: hidden;
+}
+
+#storia,
+#collezioni,
+#sedi {
+  scroll-margin-top: 80px;
 }

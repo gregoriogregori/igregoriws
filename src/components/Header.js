@@ -1,20 +1,24 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import Image from "next/image";
 import logo from "/public/logo.png";
 import Link from "next/link";
 import LangMenu from "../components/common/LangMenu";
+import { setOpenMenu } from "../redux/layout";
 
 const Header = ({ content }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useDispatch();
   const handleClick = () => {
     setIsOpen(!isOpen);
+    dispatch(setOpenMenu(!isOpen));
   };
   return (
     <header
       id="navbar"
-      className="bg-gray-900 max-h-85px] text-white shadow-xl shadow-white"
+      className="bg-gray-900 max-h-85px] text-white fixed w-full z-[2]"
     >
-      <navbar className="bg-black grid grid-cols-6 p-3">
+      <div className="bg-black grid grid-cols-6 p-3">
         <div id="left" className="col-span-1 flex items-center justify-center">
           <LangMenu />
         </div>
@@ -62,26 +66,22 @@ const Header = ({ content }) => {
             </div>
           </div>
         </div>
-      </navbar>
-      <div id="menu" className={isOpen ? "responsive bg-slate-200" : "hidden"}>
-        <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
-          <div className="fixed left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
-            <div className="mb-12">
-              {" "}
-              <Image src={logo} />
-            </div>
+      </div>
+      <div
+        id="menu"
+        className={isOpen ? "responsive bg-slate-200 pt-0" : "hidden"}
+      >
+        <div className="left-0 top-0 w-full h-screen bg-black/70">
+          <div className="left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
             <div className="flex flex-col text-yellow-500 text-xl gap-12 pt-4">
-              <Link href="/#storia" onClick={handleClick}>
-                Chi siamo
+              <Link href="#storia" onClick={handleClick}>
+                {content.who}
               </Link>
-              <Link href="/#creations" onClick={handleClick}>
-                Collezioni
+              <Link href="#collezioni" onClick={handleClick}>
+                {content.collection}
               </Link>
-              <Link href="/#sedi" onClick={handleClick}>
-                Le nostre Sedi
-              </Link>
-              <Link href="/#footer" onClick={handleClick}>
-                Contatti
+              <Link href="#sedi" onClick={handleClick}>
+                {content.contact}
               </Link>
             </div>
           </div>

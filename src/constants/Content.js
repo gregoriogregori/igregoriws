@@ -211,8 +211,8 @@ export const COLLECTIONS = [
     text: "Tennis Bracelet",
     img: "/assets/Covers/tennisBracelet_cover.jpg",
     images: [
-      "/assets/tennisBracelets/tennisBracelet_cover.jpg",
-      "/assets/tennisBracelets/01_tennis_bracelet.jpg",
+      "/assets/tennisBracelet/tennisBracelet_cover.jpg",
+      "/assets/tennisBracelet/01_tennis bracelet.jpg",
     ],
   },
   {

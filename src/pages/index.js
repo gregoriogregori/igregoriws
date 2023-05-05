@@ -19,6 +19,7 @@ export default function Home() {
   const selectedLanguage = useSelector(
     (state) => state.language.selectedLanguage
   );
+  const isMenuOpen = useSelector((state) => state.layout.openMenu);
   const dispatch = useDispatch();
   useEffect(() => {
     if (typeof window !== undefined) {
@@ -30,6 +31,16 @@ export default function Home() {
       }
     }
   }, [dispatch, selectedLanguage]);
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (isMenuOpen) {
+      body.classList.add("menu-is-open");
+    } else {
+      body.classList.remove("menu-is-open");
+    }
+  }, [isMenuOpen]);
+
   const Content = HOME_CONTENT[selectedLanguage];
   const Collezioni = COLLEZIONI_CONTENT[selectedLanguage];
   const MenuContent = MENU_ITEM[selectedLanguage];
@@ -41,13 +52,17 @@ export default function Home() {
         <meta name="description" content="Gioielleria I Gregori Milano" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Header content={MenuContent} />
-      <Hero content={Content} />
-      <Storia content={Content} />
-      {/* <Creations content={Content.collezioni} /> */}
-      <Collections content={Collezioni} />
-      <Sedi content={Content.sedi} />
-      <Footer />
+      <main>
+        <Header content={MenuContent} />
+
+        <Hero content={Content} />
+        <Storia content={Content} />
+        {/* <Creations content={Content.collezioni} /> */}
+        <Collections content={Collezioni} />
+        <Sedi content={Content.sedi} />
+
+        <Footer />
+      </main>
     </>
   );
 }
