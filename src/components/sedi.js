@@ -5,7 +5,7 @@ const Sedi = ({ content }) => {
         <div className="flex justify-center items-center pt-8">
           <p className="text-white text-4xl font-bold">{content.title}</p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center gap-8 items-center p-8 text-xl">
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-24 items-center p-8 text-xl">
           <a
             href="https://goo.gl/maps/efygMvXhfqDiTK9C6"
             target="_blank"
