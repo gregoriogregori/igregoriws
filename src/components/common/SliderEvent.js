@@ -7,10 +7,10 @@ const SliderEvent = ({ images, desktop }) => {
     <div>
       <Slide slidesToScroll={3} slidesToShow={3} indicators={true}>
         {images.map((each, index) => {
-          console.log(each);
           return (
             <div key={index} className="p-[8px]">
               <img
+                className="rounded-t"
                 style={{
                   objectFit: "cover",
                   width: "100%",
@@ -32,10 +32,10 @@ const SliderEvent = ({ images, desktop }) => {
     <div>
       <Slide slidesToScroll={1} slidesToShow={1} indicators={true}>
         {images.map((each, index) => {
-          console.log(each);
           return (
             <div key={index} className="p-[8px]">
               <img
+                className="rounded-t"
                 style={{
                   objectFit: "cover",
                   width: "100%",
