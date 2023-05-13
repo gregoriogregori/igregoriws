@@ -73,7 +73,7 @@ const Header = ({ content }) => {
       >
         <div className="left-0 top-0 w-full h-screen bg-black/70">
           <div className="left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
-            <div className="flex flex-col text-yellow-500 text-xl2 gap-18 pt-4">
+            <div className="flex flex-col text-yellow-500 text-xl2 gap-24 pt-4">
               <Link href="#storia" onClick={handleClick}>
                 {content.who}
               </Link>
