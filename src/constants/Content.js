@@ -240,7 +240,7 @@ export const COLLECTIONS = [
   },
   {
     text: "Le Fedi",
-    img: "/assets/Covers/fedi_cover.jpg",
+    img: "/assets/Covers/fedi_cover_1.jpg",
     images: [
       "/assets/fedi/fedi_cover.jpg",
       "/assets/fedi/fedi1.jpg",
