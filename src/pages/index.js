@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Sedi from "../components/sedi";
 import Storia from "../components/Storia";
-import Creations from "../components/creations";
+import Eventi from "../components/Eventi";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import { useSelector, useDispatch } from "react-redux";
@@ -57,8 +57,8 @@ export default function Home() {
 
         <Hero content={Content} />
         <Storia content={Content} />
-        {/* <Creations content={Content.collezioni} /> */}
         <Collections content={Collezioni} />
+        <Eventi content={Content.eventi} />
         <Sedi content={Content.sedi} />
 
         <Footer />

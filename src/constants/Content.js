@@ -14,6 +14,11 @@ export const HOME_CONTENT = {
       callDesktop: "TUTTE LE COLLEZIONI",
       callMobile: "VEDI TUTTE",
     },
+    eventi: {
+      title: "I Gregori nel mondo",
+      subtitle:
+        "Partecipiamo sempre ai migliori eventi del settore in giro per il mondo",
+    },
   },
   en: {
     title: "Jewels beyond dreams",
@@ -29,6 +34,10 @@ export const HOME_CONTENT = {
       title: "OUR CREATIONS",
       callDesktop: "ALL COLLECTIONS",
       callMobile: "SEE ALL",
+    },
+    eventi: {
+      title: "The 'Gregori' in the world",
+      subtitle: "We always attend the best industry events around the world",
     },
   },
   ch: {
@@ -46,6 +55,10 @@ export const HOME_CONTENT = {
       callDesktop: "所有系列",
       callMobile: "查看全部",
     },
+    eventi: {
+      title: "世界上的格雷戈里",
+    },
+    subtitle: "我们总是参加世界各地最好的行业活动",
   },
 };
 
@@ -250,131 +263,50 @@ export const COLLECTIONS = [
   },
 ];
 
-export const COLLECTIONS_HOME = [
-  {
-    text: "Eternelle",
-    img: "/assets/Covers/eternelle_cover.jpg",
-    images: [
-      "/assets/Eternelle/eternelle_cover.jpg",
-      "/assets/Eternelle/01_eternelle.jpg",
-    ],
-  },
-  {
-    text: "Da Vinci",
-    img: "/assets/Covers/daVinci_cover.jpg",
-    images: [
-      "/assets/DaVinci/AUREA_2.jpg",
-      "/assets/DaVinci/AUREA_3.jpg",
-      "/assets/DaVinci/AUREA_4.jpg",
-      "/assets/DaVinci/AUREA.jpg",
-      "/assets/DaVinci/daVinci_cover.jpg",
-      "/assets/DaVinci/RENAISSANCE_3.jpg",
-      "/assets/DaVinci/RENAISSANCE_4.jpg",
-      "/assets/DaVinci/RENAISSANCE.jpg",
-      "/assets/DaVinci/VITRUVIAN_2.jpg",
-      "/assets/DaVinci/VITRUVIAN_3.jpg",
-      "/assets/DaVinci/VITRUVIAN_4.jpg",
-      "/assets/DaVinci/VITRUVIAN.jpg",
-    ],
-  },
-  {
-    text: "Platinum",
-    img: "/assets/Covers/platinum_cover.jpg",
-    images: [
-      "/assets/Platinum/I GREGORI_03_05008.jpg",
-      "/assets/Platinum/I GREGORI_04_05008.jpg",
-      "/assets/Platinum/I GREGORI_05_05008.jpg",
-      "/assets/Platinum/I GREGORI_06_05008.jpg",
-      "/assets/Platinum/I GREGORI_07_05008.jpg",
-      "/assets/Platinum/I GREGORI_08_05008.jpg",
-      "/assets/Platinum/I GREGORI_10_05008.jpg",
-      "/assets/Platinum/I GREGORI_12_05008.jpg",
-      "/assets/Platinum/I GREGORI_13_05008.jpg",
-      "/assets/Platinum/I GREGORI_14_05008.jpg",
-      "/assets/Platinum/platinum_cover.jpg",
-      "/assets/Platinum/scrigno aperto.jpg",
-      "/assets/Platinum/scrigno chiuso.jpg",
-    ],
-  },
-
-  {
-    text: "Solitaire",
-    img: "/assets/Covers/solitaire_cover.jpg",
-    images: [
-      "/assets/Solitaire/solitaire_cover.jpg",
-      "/assets/Solitaire/02_solitaire.jpg",
-      "/assets/Solitaire/03_solitaire.jpg",
-      "/assets/Solitaire/04_solitaire.jpg",
-    ],
-  },
-  {
-    text: "Tennis Bracelet",
-    img: "/assets/Covers/tennisBracelet_cover.jpg",
-    images: [
-      "/assets/TennisBracelets/tennisBracelet_cover.jpg",
-      "/assets/TennisBracelets/01_tennis_bracelet.jpg",
-    ],
-  },
-  {
-    text: "Trilogy",
-    img: "/assets/Covers/trilogy_cover.jpg",
-    images: [
-      "/assets/Trilogy/trilogy_cover.jpg",
-      "/assets/Trilogy/02_trilogy.jpg",
-      "/assets/Trilogy/04_trilogy.jpg",
-      "/assets/Trilogy/06_trilogy.jpg",
-      "/assets/Trilogy/07_trilogy.jpg",
-      "/assets/Trilogy/08_trilogy.jpg",
-      "/assets/Trilogy/09_trilogy.jpg",
-    ],
-  },
-];
-
-
 export const EVENTI = [
   {
     text: "Fiera di Vicenza, Italy",
-    title:"Vicenzaoro Charm",
+    title: "Vicenzaoro Charm",
     img: "/eventi/immagine3.jpg",
   },
   {
     text: "Fiera di Vicenza, Italy",
-    title:"Vicenzaoro Choice",
+    title: "Vicenzaoro Choice",
     img: "/eventi/immagine4.jpg",
   },
   {
     text: "Fiera di Vicenza, Italy",
-    title:"Vicenzaoro First",
+    title: "Vicenzaoro First",
     img: "/eventi/immagine8.jpg",
   },
   {
     text: "Hong Kong, China",
-    title:"Jewellery & Jem Fair",
+    title: "Jewellery & Jem Fair",
     img: "/eventi/immagine1.jpg",
   },
   {
     text: "MCH Basilea, Switzerland",
-    title:"Baselwold",
+    title: "Baselwold",
     img: "/eventi/immagine2.jpg",
   },
   {
     text: "Javits Convenction Center, New York, Usa",
-    title:"JA Summer Show",
+    title: "JA Summer Show",
     img: "/eventi/immagine5.jpg",
   },
   {
     text: "Javits Convenction Center, New York, Usa",
-    title:"JA Special Delivery Show",
+    title: "JA Special Delivery Show",
     img: "/eventi/immagine6.jpg",
   },
   {
     text: "Javits Convenction Center, New York, Usa",
-    title:"JA Winter Show",
+    title: "JA Winter Show",
     img: "/eventi/immagine9.jpg",
   },
   {
     text: "Sands Expo & Convenction Center, Las Vegas, Usa",
-    title:"JCK Las Vegas",
+    title: "JCK Las Vegas",
     img: "/eventi/immagine7.jpg",
-  }
-]
+  },
+];
