@@ -99,7 +99,7 @@ export const COLLECTIONS = [
     ],
   },
   {
-    text: "Da Vinci",
+    text: "Da Vinci Cut",
     img: "/assets/Covers/daVinci_cover.jpg",
     images: [
       "/assets/DaVinci/AUREA_2.jpg",
@@ -238,6 +238,16 @@ export const COLLECTIONS = [
       "/assets/Waves/013.jpg",
     ],
   },
+  {
+    text: "Le Fedi",
+    img: "/assets/Covers/fedi_cover.jpg",
+    images: [
+      "/assets/Fedi/fedi_civer.jpg",
+      "/assets/Fedi/fedi1.jpg",
+      "/assets/Fedi/fedi2.jpg",
+      "/assets/Fedi/fedi3.jpg",
+    ],
+  },
 ];
 
 export const COLLECTIONS_HOME = [
@@ -319,3 +329,52 @@ export const COLLECTIONS_HOME = [
     ],
   },
 ];
+
+
+export const EVENTI = [
+  {
+    text: "Fiera di Vicenza, Italy",
+    title:"Vicenzaoro Charm",
+    img: "/eventi/immagine3.jpg",
+  },
+  {
+    text: "Fiera di Vicenza, Italy",
+    title:"Vicenzaoro Choice",
+    img: "/eventi/immagine4.jpg",
+  },
+  {
+    text: "Fiera di Vicenza, Italy",
+    title:"Vicenzaoro First",
+    img: "/eventi/immagine8.jpg",
+  },
+  {
+    text: "Hong Kong, China",
+    title:"Jewellery & Jem Fair",
+    img: "/eventi/immagine1.jpg",
+  },
+  {
+    text: "MCH Basilea, Switzerland",
+    title:"Baselwold",
+    img: "/eventi/immagine2.jpg",
+  },
+  {
+    text: "Javits Convenction Center, New York, Usa",
+    title:"JA Summer Show",
+    img: "/eventi/immagine5.jpg",
+  },
+  {
+    text: "Javits Convenction Center, New York, Usa",
+    title:"JA Special Delivery Show",
+    img: "/eventi/immagine6.jpg",
+  },
+  {
+    text: "Javits Convenction Center, New York, Usa",
+    title:"JA Winter Show",
+    img: "/eventi/immagine9.jpg",
+  },
+  {
+    text: "Sands Expo & Convenction Center, Las Vegas, Usa",
+    title:"JCK Las Vegas",
+    img: "/eventi/immagine7.jpg",
+  }
+]
