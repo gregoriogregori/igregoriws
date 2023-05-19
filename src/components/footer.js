@@ -2,8 +2,6 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { HiMapPin } from "react-icons/hi2";
-import logo from "/public/logo.png";
 
 const Footer = () => {
   return (

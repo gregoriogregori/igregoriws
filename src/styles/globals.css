@@ -56,7 +56,7 @@ body.no-scroll {
 
 @media (max-width: 576px) {
   #hero {
-    background-image: url("../../public/hero_m.jpg");
+    background-image: url("../../public/hero_m_2.jpg");
     background-position: center;
     background-size: cover;
   }

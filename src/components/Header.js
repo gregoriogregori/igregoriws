@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import Image from "next/image";
-import logo from "/public/logo.png";
+import logo from "/public/Logo_new.png";
 import Link from "next/link";
 import LangMenu from "../components/common/LangMenu";
 import { setOpenMenu } from "../redux/layout";
