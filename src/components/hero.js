@@ -12,12 +12,20 @@ const Hero = ({ content }) => {
             {content.title}
           </Text>
           <Text
-            className="text-white text-center text-lg font-light pt-[16px] italic tracking-widest"
+            className="text-white text-center text-lg font-light pt-[16px] italic tracking-widest hidden md:block"
             tag="h2"
           >
             {content.subtitle}
           </Text>
         </div>
+      </div>
+      <div className="p-[16px]">
+        <Text
+          className="text-center text-2xl font-light italic tracking-widest block md:hidden"
+          tag="h2"
+        >
+          {content.subtitle}
+        </Text>
       </div>
       <div id="spacer" className="border-t-[3px] border-slate-950"></div>
     </section>
