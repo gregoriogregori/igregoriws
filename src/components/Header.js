@@ -16,7 +16,7 @@ const Header = ({ content }) => {
   return (
     <header
       id="navbar"
-      className="bg-gray-900 max-h-85px] text-white fixed w-full z-[2]"
+      className="bg-gray-900 max-h-85px] text-white fixed w-full z-[100]"
     >
       <div className="bg-black grid grid-cols-6 p-3">
         <div id="left" className="col-span-1 flex items-center justify-center">
