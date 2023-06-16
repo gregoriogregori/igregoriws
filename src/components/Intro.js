@@ -59,7 +59,7 @@ export default function Intro() {
         <img
           src="/Logo_new.png"
           alt="logo"
-          className="logo-animated animate__animated animate__slideInDown animate__slower	1s"
+          className="logo-animated animate__animated animate__slideInLeft animate__slower	1s"
         />
       </div>
     </div>
