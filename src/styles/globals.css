@@ -237,17 +237,32 @@ body.no-scroll {
   }
 }
 
+@keyframes moveUp {
+  0% {
+    transform: translateY(-900px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .star {
   position: absolute;
   background: #cea95b;
   border-radius: 100%;
   animation: move;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
   z-index: -1;
 }
 
 #intro.not-visible .star {
   height: 0 !important;
   width: 0 !important;
+}
+
+.logo-animated {
+  animation: moveUp;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }

@@ -12,9 +12,9 @@ export default function Intro() {
     const intro = document.querySelector("#intro");
     body.classList.add("no-scroll");
     intro.classList.add("visible");
-    setTimeout(() => body.classList.remove("no-scroll"), 2000);
-    setTimeout(() => intro.classList.remove("visible"), 2000);
-    setTimeout(() => intro.classList.add("not-visible"), 2000);
+    setTimeout(() => body.classList.remove("no-scroll"), 2500);
+    setTimeout(() => intro.classList.remove("visible"), 2500);
+    setTimeout(() => intro.classList.add("not-visible"), 2500);
   }, []);
   const [stars, setStars] = useState([]);
   const createStarsPositions = (size, quantity) => {
@@ -56,11 +56,7 @@ export default function Intro() {
             />
           ))}
 
-        <img
-          src="/Logo_new.png"
-          alt="logo"
-          className="logo-animated animate__animated animate__slideInLeft animate__slower	1s"
-        />
+        <img src="/Logo_new.png" alt="logo" className="logo-animated" />
       </div>
     </div>
   );
