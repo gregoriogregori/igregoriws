@@ -6,7 +6,13 @@ const HeroVideo = ({ content }) => {
     <section id="hero">
       <div className="video-bg">
         <div className="max-w-6xl mx-auto pt-[120px] ">
-          <video width="100%" loop autoPlay muted>
+          <video
+            width="100%"
+            autoPlay="autoplay"
+            muted="muted"
+            loop="loop"
+            playsInline="playsinline"
+          >
             <source src="/videoHome.mp4" type="video/mp4"></source>
           </video>
         </div>
