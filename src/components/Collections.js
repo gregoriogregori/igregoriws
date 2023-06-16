@@ -6,7 +6,7 @@ const Collezioni = ({ content }) => {
   return (
     <div
       id="collezioni"
-      className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 bg-white md:py-[70px] py-[32px]"
+      className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 md:py-[70px] py-[32px]"
     >
       <Text
         tag="h1"

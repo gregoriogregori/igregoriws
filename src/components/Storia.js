@@ -10,7 +10,7 @@ const sliderImages = [
 const Storia = ({ content }) => {
   return (
     <section id="storia">
-      <div className="container flex flex-col gap-8 max-w-6xl mx-auto mb-12 py-6 md:py-24 px-6 text-slate-800 md:flex-row bg-white">
+      <div className="container flex flex-col gap-8 max-w-6xl mx-auto mb-12 py-6 md:py-24 px-6 text-slate-800 md:flex-row">
         <Text
           tag="h2"
           className="text-5xl text-slate-950 md:hidden text-center  title-font "
@@ -25,7 +25,7 @@ const Storia = ({ content }) => {
             </Text>
           </div>
         </div>
-        <div className="flex flex-col bg-white w-full md:w-[60%]">
+        <div className="flex flex-col w-full md:w-[60%]">
           <div className="hidden md:block">
             <Text tag="h2" className="text-6xl title-font pb-4 text-slate-950 ">
               {content.storia.title}

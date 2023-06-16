@@ -5,6 +5,7 @@
 body {
   position: relative;
   font-family: "Playfair Display", serif;
+  background-color: #d9d3d3;
 }
 
 body.no-scroll {
