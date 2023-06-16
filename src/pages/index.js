@@ -5,7 +5,8 @@ import Sedi from "../components/sedi";
 import Storia from "../components/Storia";
 import Eventi from "../components/Eventi";
 import Footer from "../components/footer";
-import Hero from "../components/hero";
+import Intro from "../components/Intro";
+import HeroVideo from "../components/HeroVideo";
 import { useSelector, useDispatch } from "react-redux";
 import { setLanguage } from "../redux/language";
 import {
@@ -54,8 +55,8 @@ export default function Home() {
       </Head>
       <main>
         <Header content={MenuContent} />
-
-        <Hero content={Content} />
+        <Intro />
+        <HeroVideo content={Content} />
         <Storia content={Content} />
         <Collections content={Collezioni} />
         <Eventi content={Content.eventi} />

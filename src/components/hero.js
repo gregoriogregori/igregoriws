@@ -6,13 +6,13 @@ const Hero = ({ content }) => {
       <div className="min-h-[800px] md:min-h-[700px] reltive p-[18px] pt-[120px] sm:pt-[200px] lg:pl-[60px] animation-opacitiy">
         <div className="p-[24px] md:p-[60px] bg-black bg-opacity-40 w-full max-w-[750px]">
           <Text
-            className="text-white text-center text-4xl md:text-5xl uppercase font-medium"
+            className="text-white text-center text-4xl md:text-5xl font-medium title-font "
             tag="h1"
           >
             {content.title}
           </Text>
           <Text
-            className="text-white text-center text-lg font-light pt-[16px] italic tracking-widest hidden md:block"
+            className="text-white text-center text-lg font-light pt-[16px] italic tracking-widest hidden md:block title-font "
             tag="h2"
           >
             {content.subtitle}
@@ -21,7 +21,7 @@ const Hero = ({ content }) => {
       </div>
       <div className="p-[16px]">
         <Text
-          className="text-center text-2xl font-light italic tracking-widest block md:hidden"
+          className="text-center text-2xl font-light italic tracking-widest block md:hidden title-font "
           tag="h2"
         >
           {content.subtitle}

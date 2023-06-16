@@ -34,6 +34,7 @@ const LangMenu = (props) => {
     if (typeof window !== undefined) {
       window.localStorage.setItem("lang", language);
     }
+    setOpen(false);
   };
 
   const boxRef = React.useRef(null);

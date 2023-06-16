@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  position: relative;
   font-family: "Playfair Display", serif;
 }
 
@@ -12,6 +13,10 @@ body.no-scroll {
 
 .roboto-font {
   font-family: "Roboto", sans-serif !important;
+}
+
+.title-font {
+  font-family: "Great Vibes", cursive !important;
 }
 
 @layer components {
@@ -47,20 +52,21 @@ body.no-scroll {
   background-repeat: no-repeat;
 }
 
-#hero {
-  background-image: url("../../public/hero_d.jpg");
+#hero .video-bg {
+  /* background-image: url("../../public/hero_d.jpg");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: black;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   #hero {
     background-image: url("../../public/hero_m_2.jpg");
     background-position: center;
     background-size: cover;
   }
-}
+} */
 /* ___________________HERO__________________ */
 
 /* ___________________HAMBURGER__________________ */
@@ -197,5 +203,51 @@ body.no-scroll {
 #storia,
 #collezioni,
 #sedi {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
+}
+
+#intro {
+  height: 0;
+}
+
+#intro.not-visible {
+  height: 0;
+  transition: height 1s;
+  background-color: black !important;
+}
+
+#intro.visible {
+  display: block;
+  position: fixed;
+  background-color: black !important;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+.star {
+  position: absolute;
+  background: #cea95b;
+  border-radius: 100%;
+  animation: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+
+#intro.not-visible .star {
+  height: 0 !important;
+  width: 0 !important;
 }

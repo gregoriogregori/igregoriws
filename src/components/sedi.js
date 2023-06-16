@@ -1,9 +1,15 @@
+import Text from "../components/common/Text";
 const Sedi = ({ content }) => {
   return (
-    <section id="sedi" className="bg-slate-900 h-full font-bold text-slate-900">
+    <section id="sedi" className="bg-slate-900 h-full">
       <div className="border-b border-yellow-600">
         <div className="flex justify-center items-center pt-8">
-          <p className="text-white text-4xl font-bold">{content.title}</p>
+          <Text
+            tag="h2"
+            className="title-font text-6xl text-slate-950 text-center font-normal mb-[8px] text-white"
+          >
+            {content.title}
+          </Text>
         </div>
         <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-48 items-center p-8 text-xl">
           <a

@@ -25,7 +25,7 @@ const ItemCollection = ({ text, img, images, ...otherProps }) => {
         style={{ backgroundImage: bgurl, border: "1px solid #F1F1F1" }}
       >
         <div className="flex items-center justify-center p-4 text-white bg-slate-900 bg-opacity-80 rounded-b relative w-full">
-          <p className="text-xl uppercase">{text}</p>
+          <p className="text-4xl title-font ">{text}</p>
         </div>
       </button>
       <Modal
