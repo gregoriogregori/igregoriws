@@ -10,8 +10,8 @@ const Collezioni = ({ content }) => {
       className="container max-w-6xl mx-auto px-6 text-slate-900 md:px-8 md:py-[70px] py-[32px]"
     >
       <Text
-        tag="h1"
-        className="title-font text-5xl text-slate-950 text-center font-medium mb-[8px]"
+        tag="h2"
+        className="title-font text-4xl text-slate-950 text-center font-medium mb-[8px]"
       >
         {content.title}
       </Text>

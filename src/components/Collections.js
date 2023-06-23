@@ -10,7 +10,7 @@ const Collezioni = ({ content }) => {
     >
       <Text
         tag="h2"
-        className="title-font text-5xl font-medium text-slate-950 text-center mb-[8px]"
+        className="title-font text-4xl font-medium text-slate-950 text-center mb-[8px]"
       >
         {content.title}
       </Text>

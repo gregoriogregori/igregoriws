@@ -29,7 +29,7 @@ const Storia = ({ content }) => {
           <div className="hidden md:block">
             <Text
               tag="h2"
-              className="text-5xl font-medium title-font pb-4 text-slate-950 "
+              className="text-4xl font-medium title-font pb-4 text-slate-950 "
             >
               {content.storia.title}
             </Text>
