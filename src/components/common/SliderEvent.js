@@ -5,7 +5,12 @@ import "react-slideshow-image/dist/styles.css";
 const SliderEvent = ({ images, desktop }) => {
   return desktop ? (
     <div>
-      <Slide slidesToScroll={3} slidesToShow={3} indicators={true}>
+      <Slide
+        slidesToScroll={3}
+        slidesToShow={3}
+        indicators={true}
+        duration={2000}
+      >
         {images.map((each, index) => {
           return (
             <div key={index} className="p-[8px]">
@@ -30,7 +35,12 @@ const SliderEvent = ({ images, desktop }) => {
     </div>
   ) : (
     <div>
-      <Slide slidesToScroll={1} slidesToShow={1} indicators={true}>
+      <Slide
+        slidesToScroll={1}
+        slidesToShow={1}
+        indicators={true}
+        duration={2000}
+      >
         {images.map((each, index) => {
           return (
             <div key={index} className="p-[8px]">

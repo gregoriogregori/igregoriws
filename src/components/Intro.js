@@ -56,7 +56,12 @@ export default function Intro() {
             />
           ))}
 
-        <img src="/Logo_new.png" alt="logo" className="logo-animated" />
+        <img
+          src="/Logo_new.png"
+          alt="logo"
+          className="logo-animated"
+          style={{ maxWidth: "250px" }}
+        />
       </div>
     </div>
   );

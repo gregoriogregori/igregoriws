@@ -6,7 +6,7 @@ const Sedi = ({ content }) => {
         <div className="flex justify-center items-center pt-8">
           <Text
             tag="h2"
-            className="title-font text-6xl text-slate-950 text-center font-normal mb-[8px] text-white"
+            className="title-font text-5xl text-slate-950 text-center font-medium mb-[8px] text-white"
           >
             {content.title}
           </Text>

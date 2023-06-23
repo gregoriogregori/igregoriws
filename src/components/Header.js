@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import Image from "next/image";
-import logo from "/public/Logo_new.png";
 import Link from "next/link";
 import LangMenu from "../components/common/LangMenu";
 import { setOpenMenu } from "../redux/layout";
@@ -26,7 +24,7 @@ const Header = ({ content }) => {
           id="logo"
           className="col-span-4 md:col-span-3 md:pl-36 flex items-center justify-center"
         >
-          <Image className="w-[200px] " src={logo} alt="logo" />
+          <img className="w-[200px]" src="/Logo_new.png" alt="logo" />
         </div>
         <div className="md:hidden flex items-center justify-center pt-1">
           <button
@@ -71,9 +69,9 @@ const Header = ({ content }) => {
         id="menu"
         className={isOpen ? "responsive bg-slate-200 pt-0" : "hidden"}
       >
-        <div className="left-0 top-0 w-full h-screen bg-black/70">
-          <div className="left-0 top-0 w-[100%] h-screen bg-black p-10 ease-in-out duration-500">
-            <div className="flex flex-col text-yellow-500 text-2xl gap-24 pt-4">
+        <div className="right-0 top-0 bg-black/70">
+          <div className="right-0 top-0 w-[100%] bg-black p-4 ease-in-out duration-500">
+            <div className="flex flex-col text-yellow-500 text-xl gap-4 pt-4">
               <Link href="#storia" onClick={handleClick}>
                 {content.who}
               </Link>

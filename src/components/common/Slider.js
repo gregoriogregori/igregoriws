@@ -3,7 +3,7 @@ import "react-slideshow-image/dist/styles.css";
 
 const Slider = ({ images }) => {
   return (
-    <Zoom arrows={false} scale={1.4}>
+    <Zoom arrows={false} scale={1.4} duration={1000}>
       {images.map((each, index) => (
         <div key={index} style={{ width: "100%" }}>
           <img

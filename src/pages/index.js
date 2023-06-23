@@ -33,14 +33,14 @@ export default function Home() {
     }
   }, [dispatch, selectedLanguage]);
 
-  useEffect(() => {
-    const body = document.querySelector("body");
-    if (isMenuOpen) {
-      body.classList.add("menu-is-open");
-    } else {
-      body.classList.remove("menu-is-open");
-    }
-  }, [isMenuOpen]);
+  // useEffect(() => {
+  //   const body = document.querySelector("body");
+  //   if (isMenuOpen) {
+  //     body.classList.add("menu-is-open");
+  //   } else {
+  //     body.classList.remove("menu-is-open");
+  //   }
+  // }, [isMenuOpen]);
 
   const Content = HOME_CONTENT[selectedLanguage];
   const Collezioni = COLLEZIONI_CONTENT[selectedLanguage];
