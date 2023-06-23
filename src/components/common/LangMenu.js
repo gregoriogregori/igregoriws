@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import { useSelector, useDispatch } from "react-redux";
 import { setLanguage } from "../../redux/language";
+import Text from "./Text";
 
 const useOutsideAlerter = (ref, cb, closeOutsideHandler) => {
   useEffect(() => {
@@ -40,17 +41,23 @@ const LangMenu = (props) => {
   const boxRef = React.useRef(null);
 
   useOutsideAlerter(boxRef, () => setOpen(false), true);
-
+  const textToShow =
+    selectedLanguage === "it"
+      ? "IT"
+      : selectedLanguage === "en"
+      ? "EN"
+      : "中国人";
   return (
     <div className={`lang-menu-container ${className}`} id={id} {...otherProps}>
       <div ref={boxRef}>
         <button onClick={() => setOpen((prevState) => !prevState)}>
-          <Image
+          {/* <Image
             src={`/${selectedLanguage}.png`}
             alt={selectedLanguage}
             width="30"
             height="15"
-          />
+          /> */}
+          <Text>{textToShow}</Text>
         </button>
         <div
           className={`lang-menu-dropdown ${

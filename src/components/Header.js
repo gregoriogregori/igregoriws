@@ -24,8 +24,11 @@ const Header = ({ content }) => {
           id="logo"
           className="col-span-4 md:col-span-3 md:pl-36 flex items-center justify-center"
         >
-          <img className="w-[200px]" src="/Logo_new.png" alt="logo" />
+          <Link href="/">
+            <img className="w-[200px]" src="/Logo_new.png" alt="logo" />
+          </Link>
         </div>
+
         <div className="md:hidden flex items-center justify-center pt-1">
           <button
             onClick={handleClick}
@@ -69,19 +72,17 @@ const Header = ({ content }) => {
         id="menu"
         className={isOpen ? "responsive bg-slate-200 pt-0" : "hidden"}
       >
-        <div className="right-0 top-0 bg-black/70">
-          <div className="right-0 top-0 w-[100%] bg-black p-4 ease-in-out duration-500">
-            <div className="flex flex-col text-yellow-500 text-xl gap-4 pt-4">
-              <Link href="#storia" onClick={handleClick}>
-                {content.who}
-              </Link>
-              <Link href="#collezioni" onClick={handleClick}>
-                {content.collection}
-              </Link>
-              <Link href="#sedi" onClick={handleClick}>
-                {content.contact}
-              </Link>
-            </div>
+        <div className="right-0 top-0 w-[100%] bg-black p-6 ease-in-out duration-500 rounded">
+          <div className="flex flex-col text-yellow-500 text-xl gap-4">
+            <Link href="#storia" onClick={handleClick}>
+              {content.who}
+            </Link>
+            <Link href="#collezioni" onClick={handleClick}>
+              {content.collection}
+            </Link>
+            <Link href="#sedi" onClick={handleClick}>
+              {content.contact}
+            </Link>
           </div>
         </div>
       </div>

@@ -275,3 +275,11 @@ body.no-scroll {
   width: auto;
   right: 0;
 }
+
+#menu .rounded {
+  border-radius: 0 0 20px 20px;
+}
+
+#menu a {
+  color: #d9d3d3;
+}

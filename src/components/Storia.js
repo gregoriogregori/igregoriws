@@ -13,7 +13,7 @@ const Storia = ({ content }) => {
       <div className="container flex flex-col gap-8 max-w-6xl mx-auto mb-12 py-6 md:py-24 px-6 text-slate-800 md:flex-row">
         <Text
           tag="h2"
-          className="text-3xl text-slate-950 md:hidden text-center title-font "
+          className="text-4xl text-slate-950 font-medium  md:hidden text-center title-font "
         >
           {content.storia.title}
         </Text>

@@ -242,16 +242,7 @@ export const COLLECTIONS = [
       "/assets/Waves/013.jpg",
     ],
   },
-  {
-    text: "Le Fedi",
-    img: "/assets/Covers/fedi_cover_1.jpg",
-    images: [
-      "/assets/fedi/fedi_cover.jpg",
-      "/assets/fedi/fedi1.jpg",
-      "/assets/fedi/fedi4.jpg",
-      "/assets/fedi/fedi3.jpg",
-    ],
-  },
+
   {
     text: "Nature",
     img: "/assets/Covers/nature_cover.jpg",
@@ -269,6 +260,15 @@ export const COLLECTIONS = [
       "/assets/Fire/001.jpg",
       "/assets/Fire/002.jpg",
       "/assets/Fire/014.jpg",
+    ],
+  },
+  {
+    text: "Le Fedi",
+    img: "/assets/Covers/fedi_cover_1.jpg",
+    images: [
+      "/assets/fedi/fedi_cover.jpg",
+      "/assets/fedi/fedi1.jpg",
+      "/assets/fedi/fedi4.jpg",
     ],
   },
 ];
