@@ -64,7 +64,7 @@ const LangMenu = (props) => {
             open ? "open-dropdown" : ""
           } roboto-font`}
         >
-          <div className="flex flex-col gap-[8px] text-black">
+          <div className="flex flex-col gap-[8px] text-white">
             <button
               onClick={() => handleLanguageChange("en")}
               className="flex gap-[4px]"

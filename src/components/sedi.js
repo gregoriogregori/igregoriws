@@ -6,7 +6,7 @@ const Sedi = ({ content }) => {
         <div className="flex justify-center items-center pt-8">
           <Text
             tag="h2"
-            className="title-font text-4xl text-slate-950 text-center font-medium mb-[8px] text-white"
+            className="title-font text-4xl text-center font-medium mb-[8px] text-white"
           >
             {content.title}
           </Text>
@@ -16,20 +16,20 @@ const Sedi = ({ content }) => {
             href="https://goo.gl/maps/efygMvXhfqDiTK9C6"
             target="_blank"
             id="sedi1"
-            className="w-full md:w-[340px] h-[340px] flex items-end justify-end rounded-xl"
+            className="w-full md:w-[340px] h-[340px] flex items-end justify-end rounded-xl biancoenero"
           >
             <div className="bg-white bg-opacity-75 rounded-b-xl w-full">
-              <p className=" text-center p-4">Via Marghera 22, Milano</p>
+              <p className=" text-center p-4 text-slate-900 font-bold ">Via Marghera 22, Milano</p>
             </div>
           </a>
           <a
             href="https://goo.gl/maps/g5gpzGkdkh2JYB2o8"
             target="_blank"
             id="sedi2"
-            className=" w-full md:w-[340px] h-[340px] flex items-end justify-end mt-4 md:mt-0 rounded-xl"
+            className=" w-full md:w-[340px] h-[340px] flex items-end justify-end mt-4 md:mt-0 rounded-xl biancoenero"
           >
             <div className="bg-white bg-opacity-75 rounded-b-xl w-full">
-              <p className="text-center p-4">Piazza Dergano 5, Milano</p>
+              <p className="text-center p-4 text-slate-900 font-bold ">Piazza Dergano 5, Milano</p>
             </div>
           </a>
         </div>

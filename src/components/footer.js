@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="text-center flex flex-col md:flex-row roboto-font">
             <div className="text-white mb-0 md:mb-[8px] text-sm md:text-base ">
               ©2023 All right reserved{" "}
-              <span className="text-yellow-500">I GREGORI </span>Milano
+              <span className="">I GREGORI </span>Milano
             </div>
             <div className="text-white mb-0 md:mb-[12px] md:ml-[8px] text-sm md:text-base ">
               P. IVA 09970530151

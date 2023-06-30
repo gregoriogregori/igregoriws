@@ -10,7 +10,7 @@ export const HOME_CONTENT = {
       subtitle: "Quattro generazioni, una passione",
     },
     sedi: {
-      title: "Le nostre sedi",
+      title: "Le boutiques",
     },
     collezioni: {
       title: "Le nostre creazioni",
@@ -20,7 +20,7 @@ export const HOME_CONTENT = {
     eventi: {
       title: "I Gregori nel mondo",
       subtitle:
-        "Partecipiamo sempre ai migliori eventi del settore in giro per il mondo",
+        "Partecipiamo ai migliori eventi del settore nel mondo",
     },
   },
   en: {
@@ -34,7 +34,7 @@ export const HOME_CONTENT = {
       subtitle: "Four generations, one passion",
     },
     sedi: {
-      title: "Our Offices",
+      title: "Our Boutiques",
     },
     collezioni: {
       title: "Our Creations",
@@ -108,25 +108,7 @@ export const MENU_ITEM = {
 
 export const COLLECTIONS = [
   {
-    text: "Da Vinci Cut",
-    img: "/assets/Covers/daVinci_cover.jpg",
-    images: [
-      "/assets/DaVinci/AUREA_2.jpg",
-      "/assets/DaVinci/AUREA_3.jpg",
-      "/assets/DaVinci/AUREA_4.jpg",
-      "/assets/DaVinci/AUREA.jpg",
-      "/assets/DaVinci/daVinci_cover.jpg",
-      "/assets/DaVinci/RENAISSANCE_3.jpg",
-      "/assets/DaVinci/RENAISSANCE_4.jpg",
-      "/assets/DaVinci/RENAISSANCE.jpg",
-      "/assets/DaVinci/VITRUVIAN_2.jpg",
-      "/assets/DaVinci/VITRUVIAN_3.jpg",
-      "/assets/DaVinci/VITRUVIAN_4.jpg",
-      "/assets/DaVinci/VITRUVIAN.jpg",
-    ],
-  },
-  {
-    text: "Platinum",
+    text: "Mobilis",
     img: "/assets/Covers/platinum_cover.jpg",
     images: [
       "/assets/Platinum/I GREGORI_03_05008.jpg",

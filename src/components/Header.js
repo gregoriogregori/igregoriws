@@ -16,13 +16,12 @@ const Header = ({ content }) => {
       id="navbar"
       className="bg-gray-900 max-h-85px] text-white fixed w-full z-[100]"
     >
-      <div className="bg-black grid grid-cols-6 p-3">
-        <div id="left" className="col-span-1 flex items-center justify-center">
+      <div className="bg-black flex p-3 justify-between">
+        <div id="left" className="flex items-center justify-center md:min-w-[365px]" >
           <LangMenu />
         </div>
-        <div
-          id="logo"
-          className="col-span-4 md:col-span-3 md:pl-36 flex items-center justify-center"
+        <div id="logo"
+          className="flex items-center justify-center w-[200px]"
         >
           <Link href="/">
             <img className="w-[200px]" src="/Logo_new.png" alt="logo" />
@@ -47,7 +46,7 @@ const Header = ({ content }) => {
         </div>
         <div
           id="right"
-          className="col-span-1 md:col-span-2 flex items-center justify-center"
+          className="hidden md:flex md:min-w-[365px]  items-center justify-center"
         >
           <div
             id="links"
