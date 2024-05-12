@@ -7,7 +7,7 @@ export const HOME_CONTENT = {
     storia: {
       title: "La nostra storia",
       body: "La famiglia **Gregori** opera nel mondo della gioielleria da oltre un secolo. La loro storia ebbe inizio nella **seconda metà dell'800** per opera di **Giovanni Gregori** che, con il prezioso aiuto del genio creativo del fratello Giuseppe iniziò a proporre ai propri clienti gioielli unici. **Nel corso del'900 i figli di Giuseppe, Andrea e Luigi**, continuarono l'attività intrapresa dal padre. Fu tuttavia negli **anni '50**, sotto la gestione della terza generazione, che si si ebbe la vera consacrazione: **Luigi, figlio di Andrea**, insieme alla moglie Marie Esterine, diede un forte impulso allo sviluppo dell'azienda, attribuendo al marchio un'identità riconoscibile e attrattiva. **Attualmente** l'attività è guidata dalla **quarta generazione: i fratelli Andrea e Piero Gregori.**",
-      subtitle: "Quattro generazioni, una passione",
+      subtitle: "Quattro generazioni una passione",
     },
     sedi: {
       title: "Le boutiques",
@@ -19,8 +19,7 @@ export const HOME_CONTENT = {
     },
     eventi: {
       title: "I Gregori nel mondo",
-      subtitle:
-        "Partecipiamo ai migliori eventi del settore nel mondo",
+      subtitle: "Partecipiamo ai migliori eventi del settore nel mondo",
     },
   },
   en: {
